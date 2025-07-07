@@ -1649,16 +1649,16 @@ div#st-1 {margin-top:10px}
 
 
 
-<div id="iframe-wrapper">
+<div id="voodc-wrapper">
         <div id="poster-overlay" onclick="playVideo()"></div>
-        <div id="iframe"></div>
+        <div id="voodc"></div>
     </div>
     <div class="unauthorized-message" id="unauthorized-message" style="display:none;">Acceso no autorizado.</div>
 
     <script>
         var allowedDomain = "https://t.me/APPonplushd";
         var referrer = document.referrer;
-        var iframe;
+        var voodc;
 
         if (!referrer.includes(allowedDomain)) {
             document.getElementById('unauthorized-message').style.display = 'block';
