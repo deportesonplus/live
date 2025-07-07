@@ -1635,11 +1635,7 @@ div#st-1 {margin-top:10px}
 </head>
 <body class="flex flex-col h-screen justify-between dark:bg-slate-800 dark:text-slate-300 font-sans">
 <div id="navbar"></div>
-<script>
-            $(document).ready(function() {
-                $("#navbar").load("/html/header.html");
-            });
-         </script>
+
   
 <main class="container mx-auto px-4  max-w-7xl mb-auto">
 <div class="my-3">
@@ -1648,29 +1644,11 @@ div#st-1 {margin-top:10px}
  <div class="md:col-span-3 player w-full mx-auto">
 
 
-
-<div id="voodc-wrapper">
-        <div id="poster-overlay" onclick="playVideo()"></div>
-        <div id="voodc"></div>
-    </div>
-    <div class="unauthorized-message" id="unauthorized-message" style="display:none;">Acceso no autorizado.</div>
-
-    <script>
-        var allowedDomain = "https://t.me/APPonplushd";
-        var referrer = document.referrer;
-        var voodc;
-
-        if (!referrer.includes(allowedDomain)) {
-            document.getElementById('unauthorized-message').style.display = 'block';
-            setTimeout(function() {
-                window.location.href = 'https://t.me/APPonplushd';
-            }, 0);
-        } else {
           
 <iframe class="shadow-lg rounded" width="100%" style="aspect-ratio:16/9;margin-bottom:20px" name="iframe" id="iframe" title="Live Video" frameborder="0" allow="autoplay; encrypted-media" 
   allowfullscreen src="https://voodc.com/embed/85818b92a5899e8a847a8597a08d988d87.html" scrolling="no"></iframe>
 <p>
-}
+
 
 
 
@@ -1713,4 +1691,17 @@ document.onmousedown=click
 </SCRIPT>
 
 </body>
+    <div class="unauthorized-message" id="unauthorized-message" style="display:none;">Acceso no autorizado.</div>
+
+    <script>
+        var allowedDomain = "golbolivia.com";
+        var referrer = document.referrer;
+        var player;
+
+        if (!referrer.includes(allowedDomain)) {
+            document.getElementById('unauthorized-message').style.display = 'block';
+            setTimeout(function() {
+                window.location.href = 'https://golbolivia.com';
+            }, 0);
+        } else {}
 </html>
