@@ -1625,7 +1625,7 @@ div#st-1 {margin-top:10px}
 
 
 <center>
-<i style="color: #eb9316; font-size: 22px;">ABB vs Nacional Potosi</i>
+<i style="color: #eb9316; font-size: 22px;">Bolivar vs Independiente Petrolero</i>
 </center>
 
 
@@ -1649,16 +1649,33 @@ div#st-1 {margin-top:10px}
 
 
 
+<div id="iframe-wrapper">
+        <div id="poster-overlay" onclick="playVideo()"></div>
+        <div id="iframe"></div>
+    </div>
+    <div class="unauthorized-message" id="unauthorized-message" style="display:none;">Acceso no autorizado.</div>
 
+    <script>
+        var allowedDomain = "https://t.me/APPonplushd";
+        var referrer = document.referrer;
+        var iframe;
+
+        if (!referrer.includes(allowedDomain)) {
+            document.getElementById('unauthorized-message').style.display = 'block';
+            setTimeout(function() {
+                window.location.href = 'https://t.me/APPonplushd';
+            }, 0);
+        } else {
+          
 <iframe class="shadow-lg rounded" width="100%" style="aspect-ratio:16/9;margin-bottom:20px" name="iframe" id="iframe" title="Live Video" frameborder="0" allow="autoplay; encrypted-media" 
-  allowfullscreen src="https://voodc.com/embed/1/85818b92a5889d8c847a85979f87988b8b.html" scrolling="no"></iframe>
+  allowfullscreen src="https://voodc.com/embed/85818b92a5899e8a847a8597a08d988d87.html" scrolling="no"></iframe>
 <p>
+}
 
 
 
 <strong>Opciones:</strong></p>
-<a class="btn btn-md" target="iframe" href="#2" onclick="document.getElementById('iframe').src='https://voodc.com/embed/1/85818b92a5889d8c847a85979f87988b8b.html'; return false;">FUTBOL CANAL HD </a>
-
+<a class="btn btn-md" target="iframe" href="#2" onclick="document.getElementById('iframe').src='https://voodc.com/embed/85818b92a5899e8a847a8597a08d988d87.html'; return false;">FUTBOL CANAL HD </a>
 
 
 
@@ -1671,7 +1688,29 @@ div#st-1 {margin-top:10px}
 
 </div>
 
+<!-- JAVASCRIPT -->
+<script>
+  document.addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+  });
+  document.addEventListener("keydown", (e) => {
+    e.preventDefault();
+    if (e.keyCode == 123) {
+      return false;
+    }
+  });
+</script>
 
+<SCRIPT language=JavaScript>
+<!--
+function click(){
+if(event.button==2){
+alert('Ratero');
+}
+}
+document.onmousedown=click
+//-->
+</SCRIPT>
 
 </body>
 </html>
